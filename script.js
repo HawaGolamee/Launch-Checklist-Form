@@ -8,11 +8,13 @@ window.addEventListener("load", function(){
       let fuelLevel = document.querySelector("input[name=fuelLevel]");
       let cargoMass = document.querySelector("input[name=cargoMass]");
       //for (let item of form)
-      if (isNaN(pilotName)){
+      // if (isNaN(pilotName)){
+      //    console.log(pilotName);
          
-         alert("All feilds are required")
-         event.preventDefault();
-      } else if (pilotname !== " "){
+      //    alert("All feilds are required")
+      //    event.preventDefault();
+      // } 
+      if (pilotname !== " "){
          alert("invalid input" )
          event.preventDefault();
       }
