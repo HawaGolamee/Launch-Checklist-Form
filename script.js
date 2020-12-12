@@ -7,7 +7,9 @@ window.addEventListener("load", function(){
       let fuelLevel = document.querySelector("input[name=fuelLevel]");
       let cargoMass = document.querySelector("input[name=cargoMass]");
       for (let item of form)
-      if ()
+      if (isNaN(item)){
+         alert("All feilds are required")
+      }
    });
 })
 /* This block of code shows how to format the HTML once you fetch some planetary JSON!
