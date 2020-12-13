@@ -8,20 +8,15 @@ window.addEventListener("load", function(){
       let fuelLevel = document.querySelector("input[name=fuelLevel]");
       let cargoMass = document.querySelector("input[name=cargoMass]");
       //for (let item of form)
-      if (pilotName === ""){
-        console.log("");
+      if (pilotName.type !== "text" && copilotName.type !== "text"){
+        //console.log(typeof pilotName);
          alert("All feilds are required")
          event.preventDefault();
-      } else if (copilotName === ""){
-         alert("All feilds are required")
-         event.preventDefault();
-      }else if(fuelLevel === "") {
-         alert("All feilds are required")
-         event.preventDefault();
-      } else if (cargoMass === ""){
+      } else if (fuelLevel.type !== "text" && cargoMass.type !== "text" ){
          alert("All feilds are required")
          event.preventDefault();
       }
+         
       // if (pilotName !== ""){
       //    alert("invalid input" )
          //event.preventDefault();
