@@ -30,16 +30,16 @@
                   let cargoMass = document.querySelector("input[name=cargoMass]");
                   let faultyItems = document.getElementById('faultyItems');
                   let launchStatus = document.getElementById("launchStatus");
-                  console.log(pilotName);
+                  
                   if (pilotName.value === "" || copilotName.value === ""){
                   alert("All feilds are required")
                      
                   } else if (fuelLevel.value === "" || cargoMass.value === "" ){
                      alert("All feilds are required")
                   }else if (!isNaN(pilotName.value) || !isNaN(copilotName.value)){
-                     alert("invalid names")
+                     alert("invalid input, The field should be charactors")
                   } else if (isNaN(fuelLevel.value) || isNaN(cargoMass.value)) {
-                     alert("invalid numbers")
+                     alert("invalid input, the field should be numbers")
                   } else {
                      document.getElementById("pilotStatus").innerHTML = `Pilot Name: ${pilotName.value} Ready`;
                      document.getElementById("copilotStatus").innerHTML = `Co-Pilot Name: ${copilotName.value} Ready`;
